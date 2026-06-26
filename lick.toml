@@ -1,0 +1,12 @@
+[package]
+name = "yazi"
+version = "26.5.6"
+description = "blazing fast terminal file manager"
+homepage = "https://github.com/vicvenscob/yazi"
+license = "MIT"
+url = "https://github.com/vicvenscob/yazi/archive/refs/heads/main.tar.gz"
+depends = []
+post_install = "cargo build --release && cp target/release/yazi /usr/local/bin/yazi && cp target/release/ya /usr/local/bin/ya"
+output_files = ["/usr/local/bin/yazi", "/usr/local/bin/ya"]
+
+[package.files]
